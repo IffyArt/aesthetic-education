@@ -1,0 +1,37 @@
+.main {
+  > section {
+    padding: $padding_big 0;
+  }
+
+  &__white-bg {
+    background-color: $color-white;
+    color: $color_text-color;
+  }
+
+  &__both-mask {
+    background: -700px center no-repeat
+        url('../images/background/light-bg-left.png'),
+      65vw center no-repeat url('../images/background/light-bg-right.png'),
+      white;
+  }
+
+  &__left-mask {
+    position: relative;
+    background-image: url('../images/background/dark-bg-left.png');
+    background-position: -400px center;
+    background-size: 1100px;
+    background-repeat: no-repeat;
+  }
+
+  &__container {
+    flex-direction: column;
+    margin-bottom: $margin_base;
+
+    @extend %layout-container;
+    @extend %flex-center;
+
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+  }
+}

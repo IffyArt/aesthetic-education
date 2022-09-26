@@ -1,0 +1,24 @@
+.navbar {
+  position: fixed;
+  z-index: $z-index_front;
+  overflow: auto;
+  width: 100%;
+  height: $height_navbar;
+  background-color: $color_primary;
+
+  @extend %flex-center;
+
+  &__container {
+    @extend %layout-container;
+    @extend %flex-row;
+
+    > li {
+      margin-right: 1rem;
+    }
+
+    a {
+      color: $color_white;
+      word-break: keep-all;
+    }
+  }
+}

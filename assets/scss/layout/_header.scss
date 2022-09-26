@@ -1,0 +1,54 @@
+.header {
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    background-size: cover;
+    content: '';
+  }
+
+  &::before {
+    top: 80vh;
+    left: -45px;
+    background-image: url('../images/background/header-left.png');
+
+    @include square(100px);
+  }
+
+  &::after {
+    top: 20vh;
+    right: -140px;
+    width: 1006px;
+    height: 903px;
+    background-image: url('../images/background/header-right.png');
+
+    @include phone-width() {
+      display: none;
+    }
+  }
+
+  &__container {
+    padding-top: $padding_big;
+    padding-bottom: $padding_small;
+    min-height: 100vh;
+
+    @extend %flex-column-between;
+    @extend %layout-container;
+
+    @include phone-width() {
+      min-height: 75vh;
+    }
+  }
+
+  &__top-title {
+    margin-top: $margin_big;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  &__bottom-info {
+    max-width: 350px;
+    width: 100%;
+  }
+}

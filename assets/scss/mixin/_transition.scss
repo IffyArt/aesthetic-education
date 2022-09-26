@@ -1,0 +1,12 @@
+@mixin transitionHoverBg(
+  $backgroundColor,
+  $hoverColor: darken($backgroundColor, 8)
+) {
+  background-color: $backgroundColor;
+  transition: background-color 300ms;
+
+  &:hover,
+  &.active {
+    background-color: $hoverColor;
+  }
+}

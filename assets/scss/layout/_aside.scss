@@ -1,0 +1,46 @@
+.aside {
+  position: fixed;
+  right: 0;
+  bottom: $padding_big;
+  z-index: $z-index_front;
+
+  &__links {
+    @extend %flex-column;
+
+    li {
+      color: $color_white;
+      font-size: 1.25rem;
+      line-height: 1.3;
+      cursor: pointer;
+
+      @include square(64px);
+      @extend %inline-flex-center;
+
+      svg {
+        @include square(40px);
+        fill: $color_white;
+      }
+
+      a {
+        color: $color_white;
+        text-align: center;
+      }
+
+      > span {
+        font-size: 2.5rem;
+      }
+
+      &:nth-child(1) {
+        @include transitionHoverBg($color_accent);
+      }
+
+      &:nth-child(2) {
+        @include transitionHoverBg($color_primary--light);
+      }
+
+      &:nth-child(3) {
+        @include transitionHoverBg($color_auxiliary);
+      }
+    }
+  }
+}

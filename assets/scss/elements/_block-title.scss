@@ -1,0 +1,43 @@
+$size: 69px;
+
+.block-title {
+  position: relative;
+  z-index: $z-index_base;
+  margin: auto;
+  margin-bottom: $margin_base;
+  letter-spacing: 40px;
+  font-weight: 400;
+  line-height: 1;
+
+  @extend %inline-flex-center;
+
+  &::before {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    z-index: $z-index_back;
+    width: 90%;
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      transparent #{$size - 1},
+      $color_text-color $size,
+      transparent #{$size + 1}
+    );
+    background-size: 83px;
+    content: '';
+  }
+
+  &--white {
+    color: $color-white;
+
+    &::before {
+      background-image: linear-gradient(
+        to right,
+        transparent #{$size - 1},
+        $color_white $size,
+        transparent #{$size + 1}
+      );
+    }
+  }
+}

@@ -1,0 +1,21 @@
+$col-size_padding: 10px;
+$col-size_min: 240px;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  display: inline-flex;
+  flex: 1 $col-size_min;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: $col-size_padding;
+}
+
+@for $itemNumber from 1 through 12 {
+  .col-#{$itemNumber} {
+    flex: 0 0 #{100% * ($itemNumber/12)};
+  }
+}

@@ -1,0 +1,29 @@
+.line-title {
+  margin-bottom: $margin_base;
+  margin-left: -1rem;
+  width: 100%;
+  letter-spacing: 8px;
+  font-weight: 400;
+
+  @extend %flex-row-center;
+
+  &::after {
+    flex: 1;
+    margin: 1rem;
+    height: 2px;
+    background-color: $color_line;
+    content: '';
+  }
+
+  &--right {
+    &::after {
+      order: -1;
+    }
+  }
+
+  &--white {
+    &::after {
+      background-color: $color-white;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.paper-block {
+  position: relative;
+  width: 100%;
+
+  &__title {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    padding: 1rem;
+    padding-left: 1.25rem;
+    background-color: $color_auxiliary;
+    color: $color_white;
+    text-align: center;
+    letter-spacing: 5px;
+    font-style: italic;
+    font-size: 2.2rem;
+    line-height: 1.4;
+
+    @include square(150px, 150px);
+    @extend %flex-center;
+
+    &::before {
+      position: absolute;
+      top: -5px;
+      left: -15px;
+      border: $color_auxiliary solid 1px;
+      content: '';
+
+      @include square(100%, 100%);
+    }
+  }
+
+  &__container {
+    margin: auto;
+    margin-top: 4rem;
+    padding: $padding_base;
+    width: 85%;
+    border-radius: $border-radius_layout;
+    background-color: rgba($color_white, 0.8);
+    color: $color_primary;
+  }
+
+  &--dark {
+    .paper-block__title {
+      background-color: $color_accent--light;
+      color: $color_primary;
+
+      &::before {
+        border-color: $color_primary;
+      }
+    }
+
+    .paper-block__container {
+      background-color: rgba($color_primary, 0.9);
+    }
+  }
+}
