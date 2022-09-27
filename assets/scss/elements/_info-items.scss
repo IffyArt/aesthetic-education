@@ -20,7 +20,11 @@
   }
 
   article {
+    align-items: flex-start;
+    flex: 1;
     border-left: $color_line solid 1px;
+
+    @extend %flex-column;
   }
 
   > li {
@@ -38,7 +42,17 @@
     margin-left: 2rem;
 
     > li {
+      margin: 10px 0;
       list-style-type: disc;
+    }
+  }
+
+  ol {
+    margin-left: 2rem;
+
+    > li {
+      margin-top: 5px;
+      list-style-type: decimal;
     }
   }
 }

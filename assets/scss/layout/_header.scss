@@ -35,7 +35,6 @@
 
     @extend %flex-column-between;
     @extend %layout-container;
-
     @include phone-width() {
       min-height: 75vh;
     }
