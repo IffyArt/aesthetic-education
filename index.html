@@ -4,13 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>2022 臺灣跨域美感教育國際論壇</title>
     <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap"
       rel="stylesheet"
@@ -36,14 +34,14 @@
           <img
             src="assets/images/header-element/top-title.png"
             class="header__top-title"
-            alt="2022 台灣跨域美感教育"
+            alt="2022 臺灣跨域美感教育國際論壇"
           />
         </h1>
         <sub>
           <img
             src="assets/images/header-element/bottom-info.png"
             class="header__bottom-info"
-            alt="疫情時代"
+            alt="疫情時代美感教育的永續發展"
         /></sub>
       </article>
     </header>
@@ -60,7 +58,7 @@
             />
           </svg>
         </li>
-        <li><span class="material-symbols-sharp"> expand_less </span></li>
+        <li><span class="material-icons">keyboard_arrow_up</span></li>
       </ul>
     </aside>
     <main class="main">
@@ -136,19 +134,51 @@
             <h2 class="carousel__title line-title line-title--white">
               專題演講
             </h2>
+            <button
+              class="carousel__button carousel__button--previous"
+              type="button"
+            >
+              <span class="material-icons">keyboard_arrow_left</span>
+            </button>
+            <button
+              class="carousel__button carousel__button--next"
+              type="button"
+            >
+              <span class="material-icons">keyboard_arrow_right</span>
+            </button>
             <ul class="carousel__items">
+              <li class="active">
+                <h3 class="paper-block__title carousel__avatar">
+                  <img src="assets/images/avatar/ellen-winner.png" alt="頭像" />
+                </h3>
+                <article class="paper-block__container">
+                  <h3>Ellen Winner</h3>
+                  <h4>[美國波士頓學院心理暨神經學系榮譽教授]</h4>
+                  <p>
+                    <b>Visual Arts Education: Conflicting Models</b>
+                    In the speech, Professor Winner will provide the approach to
+                    visual art education, and then discuss her research at
+                    Project Zero on visual art education. Professor Winner will
+                    also deliver her research on "Studio Thinking" , that is
+                    about developing broad habits of mind (including critical
+                    thinking and creativity), and these habits, if developed
+                    from learning of one art form, might generalize to
+                    performance in another art form.
+                  </p>
+                </article>
+              </li>
               <li>
                 <h3 class="paper-block__title carousel__avatar">
-                  <img src="assets/images/avatar/avatar.png" alt="頭像" />
+                  <img src="assets/images/avatar/robin-pascoe.png" alt="頭像" />
                 </h3>
                 <article class="paper-block__container">
                   <h3>Robin Pascoe</h3>
                   <h4>[澳洲梅鐸大學榮譽講師]</h4>
                   <p>
-                    <b
-                      >The Qualities of Quality Arts Education.: recipes for
-                      making the arts education cake.</b
-                    >
+                    <b>
+                      The Qualities of Quality Arts Education.: recipes for
+                      making the arts education cake.
+                    </b>
                     Professor Pascoe will talk about ways that can collaborate
                     with and empower arts teachers to understand, develop and
                     deliver arts education. However, it is important to remember
@@ -181,6 +211,10 @@
                   </p>
                 </article>
               </li>
+            </ul>
+            <ul class="carousel__dots">
+              <li class="active"></li>
+              <li></li>
             </ul>
           </main>
         </article>
@@ -598,5 +632,6 @@
         </p>
       </article>
     </footer>
+    <script src="assets/javascript/carousel.js"></script>
   </body>
 </html>
