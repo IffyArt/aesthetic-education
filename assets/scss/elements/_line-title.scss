@@ -1,3 +1,5 @@
+$icon-size: 7rem;
+
 .line-title {
   margin-bottom: $margin_base;
   margin-left: -1rem;
@@ -5,19 +7,52 @@
   letter-spacing: 8px;
   font-weight: 400;
 
-  @extend %flex-row-center;
+  @extend %flex-row;
 
   &::after {
     flex: 1;
     margin: 1rem;
+    margin-top: 2.5rem;
     height: 2px;
     background-color: $color_line;
     content: '';
   }
 
+  > span.material-icons {
+    position: relative;
+    margin-right: $margin_small;
+    background-color: $color_auxiliary;
+    font-size: $icon-size;
+
+    @include square($icon-size + 3rem, 50%);
+    @extend %flex-center;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: -1rem;
+      z-index: $z-index_back;
+      border: 1px solid $color_auxiliary;
+      content: '';
+
+      @include square($icon-size + 2rem, 50%);
+    }
+  }
+
   &--right {
     &::after {
       order: -1;
+    }
+
+    > span.material-icons {
+      order: 1;
+      margin: unset;
+      margin-left: $margin_small;
+      background-color: $color_accent--dark;
+
+      &::after {
+        border-color: $color_accent--dark;
+      }
     }
   }
 

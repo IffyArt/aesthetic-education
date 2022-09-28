@@ -1,0 +1,25 @@
+.traffic-info {
+  margin-top: -9rem;
+  margin-left: 10rem;
+  width: calc(100% - 15rem);
+  line-height: 4rem;
+
+  @include phone-width() {
+    margin: 0;
+    width: 100%;
+  }
+
+  > ul {
+    > li {
+      list-style-type: disc;
+    }
+  }
+}
+
+.line-title--right + .traffic-info {
+  margin-left: -10rem;
+
+  @include phone-width() {
+    margin: 0;
+  }
+}

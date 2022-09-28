@@ -13,6 +13,12 @@
         url('../images/background/light-bg-left.png'),
       65vw center no-repeat url('../images/background/light-bg-right.png'),
       white;
+
+    &--wide {
+      background: -45px center no-repeat
+          url('../images/background/header-left.png'),
+        92vw top no-repeat url('../images/background/header-right.png');
+    }
   }
 
   &__left-mask {
