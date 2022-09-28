@@ -5,6 +5,7 @@
   width: 100%;
   height: $height_navbar;
   background-color: $color_primary;
+  background-color: rgba($color: #000000, $alpha: 0.1);
 
   @extend %flex-center;
 
@@ -12,13 +13,35 @@
     @extend %layout-container;
     @extend %flex-row;
 
-    > li {
-      margin-right: 1rem;
-    }
-
     a {
+      position: relative;
+      display: inline-block;
+      padding: 10px 15px;
       color: $color_white;
       word-break: keep-all;
+      transition: transform 300ms;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: $z-index_back;
+        width: 0;
+        height: 100%;
+        background-color: $color_accent--dark;
+        content: '';
+        transition: width 400ms;
+        transform: skewX(15deg);
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &:hover::before {
+        width: 100%;
+        transform: skewX(15deg);
+      }
     }
   }
 }
