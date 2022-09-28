@@ -635,6 +635,9 @@ b {
   background-color: rgba(255, 255, 255, 0.8);
   color: #25268c;
 }
+.paper-block__container b {
+  display: block;
+}
 .paper-block--dark .paper-block__title {
   background-color: #cdfd10;
   color: #25268c;

@@ -38,6 +38,10 @@
     border-radius: $border-radius_layout;
     background-color: rgba($color_white, 0.8);
     color: $color_primary;
+
+    b {
+      display: block;
+    }
   }
 
   &--dark {
