@@ -6,8 +6,13 @@
   height: $height_navbar;
   border-bottom: $color_accent 1px solid;
   background-color: rgba($color_primary, $alpha: 0.7);
+  transition: background-color 300ms;
 
   @extend %flex-center;
+
+  &:hover {
+    background-color: $color_primary;
+  }
 
   &__container {
     @extend %layout-container;
