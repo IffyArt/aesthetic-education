@@ -1,4 +1,4 @@
-let tempIndex = 0;
+let currentIndex = 0;
 const carousel = document.querySelector('.carousel');
 const listItems = carousel.querySelectorAll('.carousel__items > li');
 const previousButton = carousel.querySelector('.carousel__button--previous');
@@ -6,8 +6,6 @@ const nextButton = carousel.querySelector('.carousel__button--next');
 const dots = carousel.querySelectorAll('.carousel__dots > li');
 
 function changeCarousel() {
-  const currentIndex = tempIndex % listItems.length;
-
   for (let i = 0; i < listItems.length; i++) {
     if (i === currentIndex) {
       listItems[i].classList.add('active');
@@ -20,18 +18,22 @@ function changeCarousel() {
 }
 
 previousButton.addEventListener('click', function () {
-  tempIndex === 0 ? (tempIndex = listItems.length - 1) : (tempIndex -= 1);
+  currentIndex <= 0
+    ? (currentIndex = listItems.length - 1)
+    : (currentIndex -= 1);
   changeCarousel();
 });
 
 nextButton.addEventListener('click', function () {
-  tempIndex += 1;
+  currentIndex >= listItems.length - 1
+    ? (currentIndex = 0)
+    : (currentIndex += 1);
   changeCarousel();
 });
 
 dots.forEach(function (dot, index) {
   dot.addEventListener('click', function () {
-    tempIndex = index;
+    currentIndex = index;
     changeCarousel();
   });
 });
