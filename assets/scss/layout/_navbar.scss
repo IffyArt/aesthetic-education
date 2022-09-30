@@ -39,13 +39,14 @@
         transform: skewX(15deg);
       }
 
+      &.active,
       &:hover {
         transform: scale(1.1);
-      }
 
-      &:hover::before {
-        width: 100%;
-        transform: skewX(15deg);
+        &::before {
+          width: 100%;
+          transform: skewX(15deg);
+        }
       }
     }
   }
