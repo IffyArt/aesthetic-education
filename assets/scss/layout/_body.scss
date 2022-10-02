@@ -13,18 +13,36 @@ $title-font-size: (
   '1': 3em,
   '2': 2.5em,
   '3': 2em,
-  '4': 1.5em,
+  '4': 1.3em,
   '5': 1.25em,
   '6': 1em,
 );
 
 @each $name, $size in $title-font-size {
   h#{$name} {
-    font-weight: 500;
     font-size: $size;
   }
 }
 
+h3 {
+  font-weight: 600;
+}
+h4 {
+  font-weight: 400;
+}
+h5 {
+  font-weight: 300;
+}
+
 b {
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+p.hightlight {
+  color: $color_primary;
 }
