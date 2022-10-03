@@ -1,8 +1,9 @@
 .traffic-info {
   margin-top: -9rem;
   margin-left: 10rem;
+  padding-top: 1rem;
   width: calc(100% - 15rem);
-  line-height: 4rem;
+  line-height: 2;
 
   @include phone-width() {
     margin: 0;
@@ -10,7 +11,10 @@
   }
 
   > ul {
+    margin-left: 1rem;
+
     > li {
+      margin-top: 10px;
       list-style-type: disc;
     }
   }

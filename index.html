@@ -17,16 +17,22 @@
   </head>
   <body>
     <nav class="navbar">
-      <ul class="navbar__container">
-        <li><a href="#news">最新消息</a></li>
-        <li><a href="#summary">論壇簡介</a></li>
-        <li><a href="#keynoteSpeech">專題演講</a></li>
-        <li><a href="#forum">圓桌論壇</a></li>
-        <li><a href="#courseSharing">課程分享</a></li>
-        <li><a href="#beautyTour">美感踏查</a></li>
-        <li><a href="#citizenForum">公民論壇</a></li>
-        <li><a href="#">雲端論壇</a></li>
-      </ul>
+      <article class="navbar__container">
+        <ul class="navbar__links">
+          <li><a href="#news">最新消息</a></li>
+          <li><a href="#summary">論壇簡介</a></li>
+          <li><a href="#keynoteSpeech">專題演講</a></li>
+          <li><a href="#forum">圓桌論壇</a></li>
+          <li><a href="#courseSharing">課程分享</a></li>
+          <li><a href="#beautyTour">美感踏查</a></li>
+          <li><a href="#citizenForum">公民論壇</a></li>
+          <li><a href="#">雲端論壇</a></li>
+        </ul>
+        <ul class="navbar__language">
+          <li>ENGLISH</li>
+          <li class="active">中文</li>
+        </ul>
+      </article>
     </nav>
     <header class="header">
       <article class="header__container">
@@ -66,14 +72,8 @@
         <article class="main__container">
           <section class="paper-block">
             <h2 class="paper-block__title">最新消息</h2>
-            <article class="paper-block__container">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              ornare commodo pellentesque. Nunc justo dui, consequat nec
-              sagittis nec, molestie eu tortor. Nulla ut ultrices nibh, ac
-              tempus nunc. Fusce pulvinar mi vestibulum odio venenatis
-              malesuada. Fusce ac ex dapibus, sollicitudin arcu sit amet,
-              maximus arcu. In facilisis nunc mi. Ut sed diam tempor, blandit
-              augue eget, consectetur augue. Proin eget placerat lacus.
+            <article class="paper-block__container text-center">
+              2022臺灣跨域美感教育國際論壇暨成果展就在111/11/11-11/12，於政大公企中心盛大登場<br />更多活動相關訊息，敬請期待！
             </article>
           </section>
         </article>
@@ -83,7 +83,7 @@
           <section class="paper-block paper-block--dark">
             <h2 class="paper-block__title">影音論壇</h2>
             <article class="paper-block__container">
-              <iframe
+              <!-- <iframe
                 width="100%"
                 height="500px"
                 src="https://www.youtube.com/embed/OYIETjc7ias"
@@ -91,7 +91,7 @@
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
-              ></iframe>
+              ></iframe> -->
             </article>
           </section>
         </article>
@@ -118,18 +118,10 @@
           <h2 class="block-title block-title--white">論壇議程</h2>
           <section class="row">
             <article class="col">
-              <img
-                src="assets/images/table/1111.jpg"
-                width="100%"
-                alt="歷程一"
-              />
+              <img src="assets/images/table/11.png" width="100%" alt="歷程一" />
             </article>
             <article class="col">
-              <img
-                src="assets/images/table/1122.png"
-                width="100%"
-                alt="歷程二"
-              />
+              <img src="assets/images/table/12.png" width="100%" alt="歷程二" />
             </article>
           </section>
         </article>
@@ -233,8 +225,9 @@
                 </li>
               </ul>
               <br />
+              <br />
               二、論題內容<br />
-              <p class="hightlight">
+              <p>
                 透過國際美感教育領域的專家學者，由自身之實務經驗及研究觀察出發，
                 分享對於「藝術教育於疫情期間施行概況」及「藝術教育於疫情下的因應與轉向」兩大議題之洞察，並對比我國疫情下美感教育之發展，
                 互動探討疫情時代下之國際美感教育發展動向。
@@ -253,7 +246,7 @@
               </ul>
               <br />
               二、論題內容<br />
-              <p class="hightlight">
+              <p>
                 邀請教育部美感教育中長程計畫之不同團隊代表，分享所屬美感教育計畫的實踐歷程，
                 論題主要涵蓋學生於其間的學習經驗、學習表現及面臨之挑戰等，並根據計畫執行經驗提出對於未來美感教育推動之建議。
               </p>
@@ -268,10 +261,9 @@
             <li>
               <h3>語文與藝術間的共融</h3>
               <article>
-                <p>
-                  主持人：國立清華大學中國文學系副教授 羅仕龍 <br /><br />
-                  分享學校：<br />
-                </p>
+                <b>主持人：國立清華大學中國文學系副教授 羅仕龍</b>
+
+                <p>分享學校：</p>
                 <ul>
                   <li>國立嘉義大學附設實驗小學</li>
                   <li>臺南市立九份子國民中小學</li>
@@ -282,11 +274,9 @@
             <li>
               <h3>數學科與藝術的交織</h3>
               <article>
-                <p>
-                  主持人：國立臺灣師範大學電機工程學系副教授 賴以威
-                  <br /><br />
-                  分享學校：<br />
-                </p>
+                <b>主持人：國立臺灣師範大學電機工程學系副教授 賴以威</b>
+
+                <p>分享學校：</p>
                 <ul>
                   <li>國立臺北教育大學附設實驗小學</li>
                   <li>臺南市立佳里國民中學</li>
@@ -297,11 +287,9 @@
             <li>
               <h3>當社會人文遇上藝術</h3>
               <article>
-                <p>
-                  主持人：國立臺灣師範大學歷史學系副教授 石蘭梅
-                  <br /><br />
-                  分享學校：<br />
-                </p>
+                <b>主持人：國立臺灣師範大學歷史學系副教授 石蘭梅</b>
+
+                <p>分享學校：</p>
                 <ul>
                   <li>彰化縣鹿港鎮鹿東國民小學</li>
                   <li>桃園市立楊明國民中學</li>
@@ -312,11 +300,9 @@
             <li>
               <h3>自然加乘藝術的火光</h3>
               <article>
-                <p>
-                  主持人：國立臺灣師範大學生命科學系教授 廖培鈞
-                  <br /><br />
-                  分享學校：<br />
-                </p>
+                <b>主持人：國立臺灣師範大學生命科學系教授 廖培鈞</b>
+
+                <p>分享學校：</p>
                 <ul>
                   <li>苗栗縣頭份市信義國民小學</li>
                   <li>彰化縣立彰興國民中學</li>
@@ -327,11 +313,9 @@
             <li>
               <h3>師培跨域課程 Q&A</h3>
               <article>
-                <p>
-                  主持人：國立屏東大學音樂學系教授（退休） 伍鴻沂
-                  <br /><br />
-                  分享人：<br />
-                </p>
+                <b>主持人：國立屏東大學音樂學系教授（退休） 伍鴻沂</b>
+
+                <p>分享人：</p>
                 <ul>
                   <li>國立臺東大學通識中心主任 郭美女</li>
                   <li>國立臺灣師範大學科技應用與人力資源發展學系教授 張玉山</li>
@@ -342,11 +326,9 @@
             <li>
               <h3>議題式跨域課程創發</h3>
               <article>
-                <p>
-                  主持人：國立臺灣體育運動大學舞蹈學系教授 羅雅柔
-                  <br /><br />
-                  分享學校：<br />
-                </p>
+                <b>主持人：國立臺灣體育運動大學舞蹈學系教授 羅雅柔</b>
+
+                <p>分享學校：</p>
                 <ul>
                   <li>桃園市桃園區慈文國民小學</li>
                   <li>花蓮縣立國風國民中學</li>
@@ -364,19 +346,17 @@
               <article>
                 <ul>
                   <li>
-                    <p>亞太地區美感教育研究室:覺「茶」生活提案</p>
-                    主講團隊: <br />
+                    <b>亞太地區美感教育研究室:覺「茶」生活提案</b>
+                    <p>主講團隊:</p>
                     <ul>
                       <li>臺北市立介壽國中視覺藝術教師 陳育淳</li>
                       <li>臺東縣大王國小學視覺藝術教師 張釋月</li>
                       <li>彰化縣立北斗國中表演藝術教師 林美宏</li>
                     </ul>
-                    <br />
                   </li>
                   <li>
-                    <p>美感與設計課程創新計畫:居家遠端的美感課程實踐</p>
+                    <b>美感與設計課程創新計畫:居家遠端的美感課程實踐</b>
                     主講人:國立陽明交通大學助理教授 凌天
-                    <br />
                   </li>
                 </ul>
               </article>
@@ -386,38 +366,21 @@
               <article>
                 <ul>
                   <li>
-                    <p>
+                    <b>
                       見美．踐美．漸美－建構美感生活學習地圖之方案實踐實施計畫:展翼開展「生命美學地圖」！
-                    </p>
-                    <h4>主講人：</h4>
+                    </b>
+                    <p>主講人：</p>
                     <ul>
                       <li>國國立高雄師範大學講師 呂瑞芬</li>
                       <li>新北市深坑國中校長 李建英</li>
                     </ul>
-                    <br />
-                    <ol>
-                      <li>
-                        <h4>
-                          從「空間改造」 到 「議題深究」孕育公民美學素養：
-                        </h4>
-                        <br />
-                        由「空間」到氛圍形塑之「環境」、空間賦意之「情境」、空間對話之「意境」；教學中也透過在地連結、公民倡議、環境覺察…之議題深究，孕育出同中求異、異中存同之公民美學素養。
-                        例：以美感撫慰環境保護中傷痛，因而蛻變的宜蘭縣內城國中小化育分校；在問題解決中涵養「公民美學」的新北市忠山實小。
-                      </li>
-                      <li>
-                        <h4>由「視覺覺察」 到 「五感體驗」陶冶生命美學：</h4>
-                        <br />
-                        因為教學中引領孩子運用美感洞悉力發現問題、以思辨力定義問題後，很多學校在計畫執行後之駐足、沉澱、凝視，逐漸由「視覺」走入五感體驗，從生活中陶養了生命美學。
-                        例：讓傷鳥驛站成了「張飛客棧」的深坑國中，初衷只想設計具在地特色之窗貼，防止常因「窗殺」而受傷的鳥兒；卻在放飛痊癒傷鳥時，看到盤旋空中急切的鳥媽媽，深深觸動青春狂飆期孩子心中的柔軟，逐漸更懂得體貼父母師長的殷切關愛，「張飛客棧」也成了復育桀敖不馴叛逆的驛站，最後更經由六藝美感課程建構療癒孩子的「解憂客棧」。
-                      </li>
-                    </ol>
                   </li>
                   <li>
-                    <p>藝起來尋美：台博X老松國小</p>
-                    <h4>
+                    <b>藝起來尋美：台博X老松國小</b>
+                    <p>
                       主講人: 國立臺北藝術大學藝術與人文教育研究所助理教授
                       吳岱融
-                    </h4>
+                    </p>
                   </li>
                 </ul>
               </article>
@@ -427,17 +390,15 @@
               <article>
                 <ul>
                   <li>
-                    <p>
+                    <b>
                       幼兒教育師培大學師資美感素養教師專業學習社群計畫: 萬物有情
                       與美相遇
-                    </p>
-                    <h4>主講人:國立清華大學副教授 劉淑英</h4>
-                    <br />
+                    </b>
+                    <p>主講人:國立清華大學副教授 劉淑英</p>
                   </li>
                   <li>
-                    <p>幼兒園美感教育扎根計畫：光影校園中的小小藝術家</p>
-                    <h4>主講人: 呂瑩瑩園長</h4>
-                    <br />
+                    <b>幼兒園美感教育扎根計畫：光影校園中的小小藝術家</b>
+                    <p>主講人: 呂瑩瑩園長</p>
                   </li>
                 </ul>
               </article>
@@ -447,30 +408,21 @@
               <article>
                 <ul>
                   <li>
-                    <h4>
+                    <b>
                       跨領域美感教育卓越領航計畫：五芒星程·眾志成藝·萃藝成美
-                    </h4>
-                    <br />
-                    <h4>主講人：</h4>
+                    </b>
+                    <p>主講人：</p>
                     <ul>
                       <li>國立澎湖科技大學教授 鍾怡慧</li>
                       <li>澎南國中教師 王姿翔</li>
                     </ul>
-                    <br />
                   </li>
                   <li>
-                    <h4>偏鄉藝術美感育苗計畫：美感育苗種藝苗</h4>
-                    <br />
-                    <h4>
-                      主講人：國立臺灣藝術大學人文學院師資培育中心副教授 賴文堅
-                    </h4>
-                    <p>(1)引領素養導向教學設計，並強化團隊合作及班經知能；</p>
+                    <b>偏鄉藝術美感育苗計畫：美感育苗種藝苗</b>
                     <p>
-                      (2)進行跨領域藝術教案設計，結合設計思考、世界咖啡館的操作，進行反覆省思及修正；
+                      主講人：國立臺灣藝術大學人文學院師資培育中心副教授 賴文堅
                     </p>
-                    <p>(3)教案實際應用於混齡教學的演練。</p>
                   </li>
-                  <li></li>
                 </ul>
               </article>
             </li>
@@ -479,15 +431,17 @@
               <article>
                 <ul>
                   <li>
-                    中小學師資生美感素養培力課程發展計畫：感覺、感受與感動—培養國小師資生在社會領域的美感教學知能
-
+                    <b
+                      >中小學師資生美感素養培力課程發展計畫：感覺、感受與感動—培養國小師資生在社會領域的美感教學知能</b
+                    >
                     <p>主講人：新北市秀峰國小教師 鄭淑慧</p>
-                    <br />
                   </li>
                   <li>
-                    中小學在職教師暨行政人員美感素養提升計畫：:藝遊未境美感培力
+                    <b>
+                      中小學在職教師暨行政人員美感素養提升計畫：:藝遊未境美感培力
+                    </b>
+                    <p>國立臺北藝術大學藝術與人文教育研究所教授 林劭仁</p>
                   </li>
-                  <li>國立臺北藝術大學藝術與人文教育研究所教授 林劭仁</li>
                 </ul>
               </article>
             </li>
@@ -499,11 +453,12 @@
                     <b
                       >學美．美學－校園美感設計實踐計畫：一場設計與教育聯手合作的「新美學運動」</b
                     >
-                    <h4>台灣設計研究院副院長 艾淑婷</h4>
-                    <br />
+                    <p>台灣設計研究院副院長 艾淑婷</p>
                   </li>
-                  <li>校園美感環境再造計畫</li>
-                  <li>主講人：文化大學景觀學系主任教授 郭瓊瑩</li>
+                  <li>
+                    <b>校園美感環境再造計畫</b>
+                    <p>主講人：文化大學景觀學系主任教授 郭瓊瑩</p>
+                  </li>
                 </ul>
               </article>
             </li>

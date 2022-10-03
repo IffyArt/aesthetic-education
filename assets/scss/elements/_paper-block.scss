@@ -39,6 +39,12 @@
     background-color: rgba($color_white, 0.8);
     color: $color_primary;
 
+    @include phone-width() {
+      padding: 50px;
+      padding-top: 90px;
+      width: 100%;
+    }
+
     b {
       display: block;
     }

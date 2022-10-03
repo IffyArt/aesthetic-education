@@ -16,6 +16,10 @@
 
   &__container {
     @extend %layout-container;
+    @extend %flex-row-between;
+  }
+
+  &__links {
     @extend %flex-row;
 
     a {
@@ -47,6 +51,29 @@
           width: 100%;
           transform: skewX(15deg);
         }
+      }
+    }
+  }
+
+  &__language {
+    @extend %flex-row;
+
+    > li {
+      margin-right: 1rem;
+      padding: 0 20px;
+      border: 1px solid $color_white;
+      transition: color 300ms, background-color 300ms;
+
+      @extend %inline-flex-center;
+
+      &:nth-last-child(1) {
+        margin-right: 0;
+      }
+
+      &.active,
+      &:hover {
+        background-color: $color-white;
+        color: $color_primary;
       }
     }
   }

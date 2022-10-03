@@ -27,22 +27,24 @@ $title-font-size: (
 h3 {
   font-weight: 600;
 }
+
 h4 {
   font-weight: 400;
 }
+
 h5 {
   font-weight: 300;
 }
 
 b {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.25rem;
 }
 
 p {
-  font-weight: 300;
-  font-size: 1rem;
+  font-weight: 400;
 }
-p.hightlight {
-  color: $color_primary;
+
+.text-center {
+  text-align: center;
 }
