@@ -6,25 +6,28 @@ const navSectionIds = [
   'courseSharing',
   'beautyTour',
   'citizenForum',
-].reverse();
+  'traffic',
+];
+const windowClientHeight = document.documentElement.clientHeight;
 const navSections = navSectionIds.map((item) => document.getElementById(item));
+const navbarLinks = document.querySelectorAll('.navbar__links>li>a');
+const navSectionsPosition = [
+  ...navSections.map((item) => item.offsetTop - 200),
+  document.querySelector('.footer').offsetTop,
+];
+let currentLink = 1;
 
 window.onscroll = function () {
-  const windowScrollHeight = document.documentElement.scrollTop;
-  const windowClientHeight = document.documentElement.clientHeight;
+  const windowScrollTop = document.documentElement.scrollTop;
+  const indexNumber = navSectionsPosition.findIndex(
+    (item) => item > windowScrollTop,
+  );
 
-  for (const section of navSections) {
-    if (section.offsetTop - windowScrollHeight - windowClientHeight <= -100) {
-      const navItems = document.querySelectorAll('.navbar > ul > li');
-      navItems.forEach((item) => {
-        const anchor = item.querySelector('a');
-        if (anchor.getAttribute('href') === `#${section.id}`) {
-          anchor.classList.add('active');
-        } else {
-          anchor.classList.remove('active');
-        }
-      });
-      return;
-    }
+  if (!(indexNumber > 0)) return;
+  if (currentLink !== indexNumber) {
+    navbarLinks[currentLink - 1].classList.remove('active');
+    currentLink = indexNumber;
+  } else {
+    navbarLinks[currentLink - 1].classList.add('active');
   }
 };

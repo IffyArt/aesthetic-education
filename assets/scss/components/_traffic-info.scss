@@ -1,13 +1,19 @@
 .traffic-info {
   margin-top: -9rem;
+  margin-bottom: -2rem;
   margin-left: 10rem;
   padding-top: 1rem;
   width: calc(100% - 15rem);
-  line-height: 2;
+  font-size: 1rem;
+  line-height: 1.5;
 
   @include phone-width() {
     margin: 0;
     width: 100%;
+  }
+
+  > p {
+    margin-bottom: 10px;
   }
 
   > ul {
@@ -16,6 +22,10 @@
     > li {
       margin-top: 10px;
       list-style-type: disc;
+
+      &:nth-child(1) {
+        margin-top: 0;
+      }
     }
   }
 }

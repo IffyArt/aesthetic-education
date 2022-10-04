@@ -22,7 +22,6 @@
   }
 
   &__left-mask {
-    position: relative;
     background-image: url('../images/background/dark-bg-left.png');
     background-position: -400px center;
     background-size: 1100px;
@@ -30,6 +29,7 @@
   }
 
   &__container {
+    position: relative;
     flex-direction: column;
     margin-bottom: $margin_base;
 
